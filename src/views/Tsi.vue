@@ -181,10 +181,10 @@ export default {
   <div class="hello">
     <Lottie class="anim1" url="https://assets2.lottiefiles.com/packages/lf20_9jXVOI.json" />
     <h1>Choisis ton concours</h1>
-    <vs-select class="select" placeholder="Concours" v-model="value">
-      <vs-option label="CCP" value="1"> CCP </vs-option>
-      <vs-option label="CCS" value="2"> CCS </vs-option>
-    </vs-select>
+    <select class="select" placeholder="Concours" v-model="value">
+      <option label="CCP" value="1">CCP</option>
+      <option label="CCS" value="2">CCS</option>
+    </select>
     <p v-show="value === '1'">Je suis ccp</p>
 
     <div v-if="value === '2'">

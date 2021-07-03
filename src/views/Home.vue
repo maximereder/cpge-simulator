@@ -54,15 +54,15 @@ export default {
     <p>Simulateur d'admissibilité des Classes Préparatoires Scientifiques</p>
     <br />
 
-    <vs-select class="select" placeholder="CPGE" v-model="value">
-      <vs-option v-for="(option, i) in options" :key="i" :value="i.toString()" :label="option.title">{{ option.title }}</vs-option>
-    </vs-select>
+    <select class="select" placeholder="CPGE" v-model="value">
+      <option v-for="(option, i) in options" :key="i" :value="i.toString()" :label="option.title">{{ option.title }}</option>
+    </select>
 
-    <vs-button gradient size="large" :disabled="!value" :to="value ? options[value].path : ''">Démarrer</vs-button>
+    <router-link :to="value ? options[value].path : ''">Démarrer</router-link>
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 #page-home {
   h3 {
     margin: 40px 0 0;
@@ -79,7 +79,7 @@ export default {
   }
 
   a {
-    color: #42b983;
+    color: $primaryColor;
   }
 
   .select {
