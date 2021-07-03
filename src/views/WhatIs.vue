@@ -1,55 +1,46 @@
 <template>
   <div class="hello">
-    
-
     <p>Hey ! Tu es étudiant en classe préparatoire scientifique ?</p>
 
     <p>Simulons ensemble tes concours pour connaitre tes admissibilités.</p>
 
-
-    <Lottie class="anim1" url="https://assets9.lottiefiles.com/private_files/lf30_txDBFP.json"/>
-
+    <Lottie class="anim1" url="https://assets9.lottiefiles.com/private_files/lf30_txDBFP.json" />
   </div>
 </template>
 
-
-
-
 <script>
-import Lottie from './Lottie.vue'
+import Lottie from '../components/Lottie.vue';
 export default {
   name: 'HelloWorld',
   components: {
-    Lottie: Lottie
+    Lottie: Lottie,
   },
   props: {
-    msg: String
+    msg: String,
   },
-   methods: {
-        launchSimulation () {
-            this.$router.push('TSI')
-        }
+  methods: {
+    launchSimulation() {
+      this.$router.push('TSI');
+    },
   },
   data() {
-      return {
-        value: '',
-        selected: null,
-        options: [
-          { value: null, text: 'Please select an option' },
-          { value: 'a', text: 'This is First option' },
-          { value: 'b', text: 'Selected Option' },
-          { value: { C: '3PO' }, text: 'This is an option with object value' },
-          { value: 'd', text: 'This one is disabled', disabled: true }
-        ]
-      }
-    }
-}
+    return {
+      value: '',
+      selected: null,
+      options: [
+        { value: null, text: 'Please select an option' },
+        { value: 'a', text: 'This is First option' },
+        { value: 'b', text: 'Selected Option' },
+        { value: { C: '3PO' }, text: 'This is an option with object value' },
+        { value: 'd', text: 'This one is disabled', disabled: true },
+      ],
+    };
+  },
+};
 </script>
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 h3 {
   margin: 40px 0 0;
 }

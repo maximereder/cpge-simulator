@@ -1,25 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
-import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css' //Vuesax styles
-/*
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
+import Vue from 'vue';
 
-Vue.use(Buefy)
-*/
+import router from './router';
 
-Vue.use(Vuesax)
+import Vuesax from 'vuesax';
+import 'vuesax/dist/vuesax.css';
 
-Vue.use(LottieAnimation); // add lottie-animation to your global scope
+import App from './App.vue';
 
-Vue.config.productionTip = false
+Vue.use(Vuesax);
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
-  store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
