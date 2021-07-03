@@ -1,8 +1,8 @@
 <script>
-import lottie from "lottie-web";
+import lottie from 'lottie-web';
 
 export default {
-  name: "Lottie",
+  name: 'Lottie',
   props: {
     url: {
       type: String,

@@ -1,5 +1,5 @@
 <script>
-import Lottie from '../components/Lottie.vue';
+import Lottie from '../components/misc/Lottie.vue';
 
 import { factor } from '../data/factor';
 

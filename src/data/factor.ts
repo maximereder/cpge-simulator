@@ -1,4 +1,4 @@
-export const factor = {
+export const factor: any = {
   centrale: {
     native: {
       m1: 12,
