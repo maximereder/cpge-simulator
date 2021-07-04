@@ -20,5 +20,6 @@ type School = {
 	title: string,
 }
 
+type Stats<S extends string> = Record<S, number>;
 
 

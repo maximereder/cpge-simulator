@@ -1,7 +1,7 @@
 <script>
 import Lottie from '../components/misc/Lottie.vue';
 
-import { factor } from '../data/factor';
+import { factors as factor } from '../data/factors';
 
 export default {
   name: 'Tsi',
