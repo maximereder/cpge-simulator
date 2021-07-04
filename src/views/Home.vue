@@ -58,7 +58,9 @@ export default {
       <option v-for="(option, i) in options" :key="i" :value="i.toString()" :label="option.title">{{ option.title }}</option>
     </select>
 
-    <router-link :to="value ? options[value].path : ''">Démarrer</router-link>
+    <div>
+      <router-link class="btn" :to="value ? options[value].path : ''">Démarrer</router-link>
+    </div>
   </div>
 </template>
 
@@ -76,10 +78,6 @@ export default {
   li {
     display: inline-block;
     margin: 0 10px;
-  }
-
-  a {
-    color: $primaryColor;
   }
 
   .select {
