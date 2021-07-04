@@ -59,7 +59,7 @@ export default {
     </select>
 
     <div>
-      <router-link class="btn" :to="value ? options[value].path : ''">Démarrer</router-link>
+      <router-link class="btn" :to="value ? options[value].path : ''"><span>Démarrer</span></router-link>
     </div>
   </div>
 </template>
