@@ -1,4 +1,4 @@
-import { Contest, League } from "../../types";
+import { Contest } from "../../types";
 
 type CentralBankKey = 'default' | 'estp';
 type CentralSubject = 'm1' | 'fr';
@@ -63,9 +63,6 @@ const ccp: Contest<'default' | 'other', 'm2' | 'fr'> = {
 		}
 	}
 }
-
-type ContestKey = 'central' | 'ccp';
-type ContestType = typeof central | typeof ccp;
 
 export const tsiLeague = {
 	title: 'TSI',

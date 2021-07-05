@@ -1,5 +1,4 @@
-import { tsiLeague } from "../data/leagues/tsi";
-import { Bank, Contest, Stats } from "../types"
+import { Bank, Stats } from "../types"
 
 export function getAverage<S extends string>(bank: Bank<S>, stats: Stats<S>): number {
 	const subjects = Object.keys(stats) as S[];
