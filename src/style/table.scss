@@ -1,0 +1,34 @@
+@import './vars';
+
+.table-wrapper {
+  overflow-x: scroll;
+  border-radius: 0.3rem;
+  box-shadow: $borderShadow;
+
+  table {
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+
+    tbody tr:hover {
+      border-radius: 0.3rem;
+      background-color: #f8f8f8;
+    }
+
+    td,
+    th {
+      padding: 0.7rem 1rem;
+    }
+
+    thead,
+    tfoot {
+      tr {
+        background-color: #eee;
+      }
+    }
+
+    &.sided td:first-child {
+      background-color: #eee;
+    }
+  }
+}

@@ -181,10 +181,10 @@ export default {
   <div class="hello">
     <Lottie class="anim1" url="https://assets2.lottiefiles.com/packages/lf20_9jXVOI.json" />
     <h1>Choisis ton concours</h1>
-    <vs-select class="select" placeholder="Concours" v-model="value">
-      <vs-option label="CCP" value="1"> CCP </vs-option>
-      <vs-option label="CCS" value="2"> CCS </vs-option>
-    </vs-select>
+    <select class="select" placeholder="Concours" v-model="value">
+      <option label="CCP" value="1">CCP</option>
+      <option label="CCS" value="2">CCS</option>
+    </select>
     <p v-show="value === '1'">Je suis ccp</p>
 
     <div v-if="value === '2'">
@@ -218,8 +218,25 @@ export default {
 
       <br />
 
-      <div>
-        <b-table bordered="bordered" striped hover :items="items"></b-table>
+      <div class="table-wrapper my-2">
+        <table class="sided">
+          <thead>
+            <tr>
+              <th>Banque</th>
+              <th>Barre</th>
+              <th>Note</th>
+              <th>Différence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, index) in items" :key="index">
+              <td>{{item.name}}</td>
+              <td>{{item.bar}}</td>
+              <td>{{item.note}}</td>
+              <td>{{item.difference}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
