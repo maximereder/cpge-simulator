@@ -1,7 +1,5 @@
-<script>
+<script lang="ts">
 import Lottie from '../components/misc/Lottie.vue';
-
-import { factors as factor } from '../data/factors';
 
 export default {
   name: 'Tsi',
@@ -10,7 +8,7 @@ export default {
   },
   data() {
     return {
-      value: '',
+      selectedContest: '',
 
       centrale: {
         m1: 0,
@@ -23,9 +21,6 @@ export default {
         fr: 0,
       },
     };
-  },
-  methods: {
-    getAverage() {},
   },
   computed: {
     averageNative() {
@@ -181,13 +176,13 @@ export default {
   <div class="hello">
     <Lottie class="anim1" url="https://assets2.lottiefiles.com/packages/lf20_9jXVOI.json" />
     <h1>Choisis ton concours</h1>
-    <select class="select" placeholder="Concours" v-model="value">
+    <select class="select" placeholder="Concours" v-model="selectedContest">
       <option label="CCP" value="1">CCP</option>
       <option label="CCS" value="2">CCS</option>
     </select>
-    <p v-show="value === '1'">Je suis ccp</p>
+    <p v-show="selectedContest === '1'">Je suis ccp</p>
 
-    <div v-if="value === '2'">
+    <div v-if="selectedContest === '2'">
       <div class="box1">
         <p class="label">Mathématique 1</p>
         <b-form-spinbutton class="spin" id="demo-sb" step="0.5" v-model="centrale_m1" min="0" max="20.0"></b-form-spinbutton>

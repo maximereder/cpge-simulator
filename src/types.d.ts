@@ -13,6 +13,7 @@ export type Contest<BankKey extends string, Subject extends string> = {
 type Bank<Subject extends string> = {
 	title: string,
 	factors: Record<Subject, number>,
+	threshold: number,
 	schools: School[],
 }
 
