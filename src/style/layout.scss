@@ -1,11 +1,33 @@
+@import "./vars";
+
 .wrapper {
-	
+  max-width: 1200px;
+  margin: auto;
+	padding: 0 1rem;
+
+  &.large {
+		max-width: 1500px;
+	}
+
+	@include medium {
+		padding: 0 2rem;
+	}
 }
 
 .m-1 {
 	margin: 1rem;
 }
 
+.my-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 .m-2 {
 	margin: 2rem;
+}
+
+.my-2 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

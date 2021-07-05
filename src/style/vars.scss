@@ -3,3 +3,9 @@ $focusColor: scale-color($primaryColor, $lightness: +50%);
 $borderColor: #808080;
 
 $borderShadow: 0 2px 3px scale-color($borderColor, $lightness: +60%);
+
+@mixin medium {
+	@media screen and (min-width: 600px) {
+		@content;
+	}
+}

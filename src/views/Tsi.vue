@@ -218,8 +218,25 @@ export default {
 
       <br />
 
-      <div>
-        <b-table bordered="bordered" striped hover :items="items"></b-table>
+      <div class="table-wrapper my-2">
+        <table class="sided">
+          <thead>
+            <tr>
+              <th>Banque</th>
+              <th>Barre</th>
+              <th>Note</th>
+              <th>Différence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, index) in items" :key="index">
+              <td>{{item.name}}</td>
+              <td>{{item.bar}}</td>
+              <td>{{item.note}}</td>
+              <td>{{item.difference}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
