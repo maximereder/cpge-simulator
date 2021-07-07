@@ -1,7 +1,8 @@
 import { Bank, Stats } from "../types"
+import { getKeys } from './object';
 
 export function getAverage<S extends string>(bank: Bank<S>, stats: Stats<S>): number {
-	const subjects = Object.keys(stats) as S[];
+	const subjects = getKeys(stats);
 
 	const statsWithCoefs = subjects.map(subject => {
 		return stats[subject] * bank.factors[subject];
