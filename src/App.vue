@@ -30,7 +30,10 @@
     font-size: 3em;
     font: bold;
   }
-
+  h2 {
+    font-size: 2em;
+    font: bold;
+  }
   h3 {
   margin: 40px 0 0;
   }
