@@ -17,6 +17,30 @@
 
 <style lang="scss">
 #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+  h1 {
+    font-size: 3em;
+    font: bold;
+  }
+
+  h3 {
+  margin: 40px 0 0;
+  }
+  ul {
+  list-style-type: none;
+  padding: 0;
+  }
+  li {
+  display: inline-block;
+  margin: 0 10px;
+  }
+
   display: grid;
   grid-template: auto 1fr auto / minmax(0, 1fr);
   gap: 0px 0px;
