@@ -4,7 +4,7 @@ import { leagues } from '../data/leagues';
 import { getAverage } from '../helpers/average';
 import { getKeys } from '../helpers/object';
 const league = 'tsi';
-const contestId = 'ccp';
+const contestId = 'central';
 type Result = {
   name: string;
   note: number;
@@ -14,13 +14,21 @@ type Result = {
 };
 export default defineComponent({
   data: () => ({
-    values: {},
+    values: {
+			
+		},
   }),
   computed: {
     userStats() {
       return {
-        m2: 15,
-        fr: 18,
+				m1: 2,
+				m2:2,
+				p1:14,
+				p2:5,
+				sii:4,
+				info: 6,
+				lv1:10,
+				fr:3
       };
     },
     items(): Result[] {
@@ -47,9 +55,10 @@ export default defineComponent({
 
 <template>
   <div class="wrapper">
+		<br>
     <h2>À présent, analysons les résultats !</h2>
-
-    <input v-for="subject in subjects" :key="subject" type="number" v-model="$data.values[subject]" :placeholder="'Your note for ' + subject" />
+		<input v-for="subject in subjects" :key="subject" class="label input" min="0" max="20" step="0.5" type="number" v-model="$data.values[subject]" :placeholder="'Ta note pour ' + subject" />
+		
 
     <div class="table-wrapper my-2">
       <table class="">

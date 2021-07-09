@@ -79,7 +79,7 @@ export default {
         <input class="label input" min="0" max="20" step="0.5" type="number" v-model="centrale_fr">
       </div>
     </div>
-      <p> {{ centrale_m1 }}</p>
+
   </div>
 </template>
 <style scoped lang="scss">

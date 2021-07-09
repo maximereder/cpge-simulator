@@ -1,8 +1,9 @@
+
 import { createRouter, createWebHistory } from 'vue-router';
 
 /* --- import pages ---- */
 import Home from './views/Home.vue';
-import Tsi from './views/Tsi.vue';
+import Simulate from './views/Simulate.vue';
 import WhatIs from './views/WhatIs.vue';
 
 export default createRouter({
@@ -12,8 +13,8 @@ export default createRouter({
 			component: Home
 		},
 		{
-			path: '/tsi',
-			component: Tsi
+			path: '/simulate',
+			component: Simulate,
 		},
 		{
 			path: '/whatis',

@@ -1,5 +1,7 @@
 <script lang="ts">
 import Lottie from '../components/misc/Lottie.vue';
+/* <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" :to="selectedLeague ? options[selectedLeague].path : ''"><span>Démarrer</span></router-link>
+*/
 
 export default {
   name: 'Home',
@@ -57,10 +59,7 @@ export default {
       <option :value="''">CPGE</option>
       <option v-for="(option, i) in options" :key="i" :value="i.toString()">{{ option.title }}</option>
     </select>
-
-    <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" :to="selectedLeague ? options[selectedLeague].path : ''"
-      ><span>Démarrer</span></router-link
-    >
+    <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" to="/simulate"><span>Démarrer</span></router-link>
   </div>
 </template>
 
