@@ -1,9 +1,6 @@
 <script lang="ts">
 import Lottie from '../components/misc/Lottie.vue';
-
 import { leagues } from "../data/leagues";
-
-
 export default {
   name: 'Tsi',
   components: {
@@ -82,11 +79,7 @@ export default {
         <input class="label input" min="0" max="20" step="0.5" type="number" v-model="centrale_fr">
       </div>
     </div>
-
-    <br>
-
-    <h2>À présent, analysons !</h2>
-    
+      <p> {{ centrale_m1 }}</p>
   </div>
 </template>
 <style scoped lang="scss">
@@ -108,12 +101,10 @@ a {
   max-width: 10em;
   margin: 1em auto;
 }
-
 .btn {
   max-width: 50em;
   margin: 1em auto;
 }
-
 .spin {
   max-width: 10em;
   margin: 1em auto;
@@ -122,23 +113,17 @@ a {
   max-width: 10em;
   margin: 1em auto;
 }
-
-
 .container {
   margin: 1em auto;
 }
-
-
 .anim {
   max-width: 20em;
   margin: 1em auto;
 }
-
 .table {
   max-width: 50em;
   margin: 1em auto;
 }
-
 .analyse_text {
   max-width: 20em;
   margin: 1em auto;
