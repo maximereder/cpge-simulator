@@ -1,6 +1,5 @@
 <script lang="ts">
 import Lottie from '../components/misc/Lottie.vue';
-import Radar from '../components/Radar.vue'
 /* <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" :to="selectedLeague ? options[selectedLeague].path : ''"><span>Démarrer</span></router-link>
 */
 
