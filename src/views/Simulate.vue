@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 import { leagues } from "../data/leagues";
 import { getAverage } from "../helpers/average";
 import { getKeys } from "../helpers/object";
-const league = "tsi";
+const league = 'tsi';
 const contestId = "central";
 type Result = {
 	name: string;
@@ -14,9 +14,11 @@ type Result = {
 };
 
 export default defineComponent({
+  
 	data: () => ({
-		values: {},
-	}),
+    values: {},
+    chart: undefined
+  }),
 	computed: {
 		userStats() {
 			return {
@@ -29,9 +31,36 @@ export default defineComponent({
 				lv1: 10,
 				fr: 3,
 			};
-		},
-
+    },
+   /*
+    userStats() {
+      if(this.chart){
+        (this.chart as Chart).data.datasets = [
+					{
+						label: "Notes",
+						data: Object.values(this.values) as number[],
+						fill: true,
+						backgroundColor: "rgba(255, 99, 132, 0.2)",
+						borderColor: "rgb(255, 99, 132)",
+						pointBackgroundColor: "rgb(255, 99, 132)",
+						pointBorderColor: "#fff",
+						pointHoverBackgroundColor: "#fff",
+						pointHoverBorderColor: "rgb(255, 99, 132)",
+					},
+        ];
+      this.chart.update();
+      }
+      return this.$data.values
+    },
+   */
+    /*
+    userStats() {
+      return this.$data.values;
+    },
+    */
+    
 		items(): Result[] {
+      const league = this.$route.params.league;
 			const contest = leagues[league].contests[contestId];
 			return getKeys(contest.banks).map((k) => {
 				const bank = contest.banks[k];
@@ -72,16 +101,18 @@ export default defineComponent({
       });
       return thresholds;
     },
+    //Revoir league
 		subjects: () => {
 			const bankKeys = getKeys(leagues[league].contests[contestId].banks);
 			return getKeys(
 				leagues[league].contests[contestId].banks[bankKeys[0]].factors
 			);
-		},
-	},
+    },
+    
+  },
 	mounted() {
 		const ctx1 = document.getElementById("radar-notes");
-		new Chart(ctx1, {
+		this.chart = new Chart(ctx1, {
 			type: "radar",
 			data: {
 				labels: getKeys(
@@ -127,7 +158,6 @@ export default defineComponent({
 			type: "radar",
 			data: {
 				labels: this.bankName,
-
 				datasets: [
 					{
 						label: "Notes",
@@ -171,7 +201,16 @@ export default defineComponent({
 				},
 			},
 		});
-	},
+  },
+  
+  methods: {
+    /*
+    updateChart: function () {
+      this.chart.data.datasets = this.userStats;
+      this.chart.update();
+    }
+    */
+  }
 });
 </script>
 
@@ -187,6 +226,7 @@ export default defineComponent({
 			max="20"
 			step="0.5"
 			type="number"
+      @change="updateChart"
 			v-model="$data.values[subject]"
 			:placeholder="'Ta note pour ' + subject"
 		/>
@@ -236,5 +276,6 @@ export default defineComponent({
 		</div>
 		<canvas id="radar-notes"></canvas>
 		<canvas id="radar-admitted"></canvas>
+    <p>{{ $route.params.league.toLowerCase() }}</p>
 	</div>
 </template>

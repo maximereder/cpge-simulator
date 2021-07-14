@@ -4,6 +4,9 @@ import Radar from '../components/Radar.vue'
 /* <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" :to="selectedLeague ? options[selectedLeague].path : ''"><span>Démarrer</span></router-link>
 */
 
+/* <option v-for="(option, i) in options" :key="i" :value="i.toString()">{{ option.title }}</option>
+*/
+
 export default {
   name: 'Home',
   components: {
@@ -59,10 +62,11 @@ export default {
 
     <select class="fit my-1" v-model="selectedLeague">
       <option :value="''">CPGE</option>
-      <option v-for="(option, i) in options" :key="i" :value="i.toString()">{{ option.title }}</option>
+      <option v-for="(option, i) in options" :key="i" :value="option.title">{{ option.title }}</option>
     </select>
-    <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" to="/simulate"><span>Démarrer</span></router-link>
+    <router-link class="btn fit my-1" :class="{ disabled: !selectedLeague }" :to="'/simulate/' + selectedLeague.toLowerCase()"><span>Démarrer</span></router-link>
   </div>
+  
 </template>
 
 <style lang="scss">

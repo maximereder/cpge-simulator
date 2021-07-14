@@ -13,8 +13,10 @@ export default createRouter({
 			component: Home
 		},
 		{
-			path: '/simulate',
+			name: 'simulate',
+			path: '/simulate/:league',
 			component: Simulate,
+			props: true
 		},
 		{
 			path: '/whatis',
