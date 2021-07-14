@@ -1,13 +1,11 @@
-export type LeagueKey = 'tsi';
-
-export type League<ContestKey extends string, C extends Contest<string, string>> = {
+export type League = {
 	title: string,
-	contests: Record<ContestKey, C>,
+	contests: Record<string, Contest<string>>,
 }
 
-export type Contest<BankKey extends string, Subject extends string> = {
+export type Contest<Subject extends string> = {
 	title: string,
-	banks: Record<BankKey, Bank<Subject>>,
+	banks: Record<string, Bank<Subject>>,
 }
 
 type Bank<Subject extends string> = {
@@ -21,4 +19,4 @@ type School = {
 	title: string,
 }
 
-type Stats<S extends string> = Record<S, number>;
+type Stats<Subject extends string> = Record<Subject, number>;

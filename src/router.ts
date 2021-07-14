@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router';
 
 /* --- import pages ---- */
@@ -14,7 +13,7 @@ export default createRouter({
 		},
 		{
 			name: 'simulate',
-			path: '/simulate/:league',
+			path: '/simulate/:league/:contest',
 			component: Simulate,
 			props: true
 		},

@@ -1,12 +1,5 @@
-<template>
-	<div>
-		<canvas id="radar-chart"></canvas>
-	</div>
-</template>
-
-
-<script>
-import Chart from "chart.js";
+<script lang="ts">
+import { Chart } from "chart.js";
 import { getKeys } from "../helpers/object";
 import { leagues } from "../data/leagues";
 import userStats from "../views/Simulate.vue"
@@ -91,8 +84,14 @@ export default {
 		},
 	},
 	mounted() {
-		const ctx = document.getElementById("radar-chart");
-		new Chart(ctx, this.radarData);
+		const canvas = this.$refs['chart'] as HTMLCanvasElement;
+		new Chart(canvas, this.radarData as any);
 	},
 };
 </script>
+
+<template>
+	<div>
+		<canvas ref="chart"></canvas>
+	</div>
+</template>

@@ -1,9 +1,6 @@
 import { Contest } from "../../types";
 
-type CentralBankKey = 'default' | 'estp' | 'arts' | 'esix' | 'ismans' | 'mineTelecom';
-type CentralSubject = 'm1' | 'm2' | 'p1' | 'p2' | 'sii' | 'info' | 'lv1' | 'fr';
-
-const central: Contest<CentralBankKey, CentralSubject> = {
+const central: Contest<'m1' | 'm2' | 'p1' | 'p2' | 'sii' | 'info' | 'lv1' | 'fr'> = {
 	title: 'Centrale',
 	banks: {
 		default: {
@@ -106,7 +103,7 @@ const central: Contest<CentralBankKey, CentralSubject> = {
 	},
 }
 
-const ccp: Contest<'default' | 'other', 'm2' | 'fr'> = {
+const ccp: Contest<'m2' | 'fr'> = {
 	title: 'Centrale',
 	banks: {
 		default: {

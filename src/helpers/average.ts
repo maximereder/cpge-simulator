@@ -1,7 +1,7 @@
-import { Bank, Stats } from "../types"
+import { Bank } from "../types"
 import { getKeys } from './object';
 
-export const getAverage = <S extends string>(bank: Bank<S>, stats: Stats<S>): number => {
+export const getAverage = (bank: Bank<string>, stats: Record<string, number>): number => {
 	const subjects = getKeys(stats);
 
 	const statsWithCoefs = subjects.map(subject => {
