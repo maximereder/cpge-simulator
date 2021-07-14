@@ -9,17 +9,15 @@ export default createRouter({
 	routes: [
 		{
 			path: '/',
-			component: Home
+			component: Home,
 		},
 		{
-			name: 'simulate',
-			path: '/simulate/:league/:contest',
+			path: '/:league/:contest',
 			component: Simulate,
-			props: true
 		},
 		{
 			path: '/whatis',
-			component: WhatIs
+			component: WhatIs,
 		}
 	],
 	history: createWebHistory(),
