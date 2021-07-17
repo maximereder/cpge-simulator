@@ -16,7 +16,7 @@ export const App: React.FC = () => {
           <Route path="/:league/:contest">
             <Simulate />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
         </Switch>
