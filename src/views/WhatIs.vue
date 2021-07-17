@@ -4,7 +4,7 @@
 
     <p>Simulons ensemble tes concours pour connaitre tes admissibilités.</p>
 
-    <Lottie class="anim1" url="https://assets9.lottiefiles.com/private_files/lf30_txDBFP.json" />
+    <Lottie class="anim1" url="https://assets9.lottiefiles.com/packages/lf20_1g2qhg7w.json" />
   </div>
 </template>
 

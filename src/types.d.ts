@@ -1,6 +1,7 @@
 export type League = {
 	title: string,
 	contests: Record<string, Contest<string>>,
+	emoji: string
 }
 
 export type Contest<Subject extends string> = {

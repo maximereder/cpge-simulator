@@ -139,7 +139,8 @@ export default defineComponent(() => {
 </script>
 <template>
   <div class="wrapper">
-    <h2>À présent, analysons les résultats !</h2>
+    <h2>Entre tes notes</h2>
+    <br>
     <input
       v-for="subject in subjects"
       :key="subject"
@@ -151,6 +152,9 @@ export default defineComponent(() => {
       v-model="values[subject]"
       :placeholder="'Ta note pour ' + subject"
     />
+    
+    <br>
+    <h2>À présent observe tes résultats !</h2>
 
     <div class="table-wrapper my-2">
       <table class="">

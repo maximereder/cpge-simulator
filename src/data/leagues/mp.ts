@@ -446,8 +446,8 @@ const ccp: Contest<'m' | 'p' | 'mode' | 'fr' | 'info' | 'lv1' | 'sii'> = {
 	}
 }
 
-export const tsiLeague = {
-	title: 'TSI',
+export const mpLeague = {
+	title: 'MP',
 	contests: {
 		centrale,
 		ccp
