@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import { Simulate } from './pages/Simulate';
 
 export const App: React.FC = () => {
   return <Router>
@@ -13,6 +14,7 @@ export const App: React.FC = () => {
       <div>
         <Switch>
           <Route path="/:league/:contest">
+            <Simulate />
           </Route>
           <Route path="/">
             <Home />
