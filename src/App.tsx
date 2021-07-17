@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
 
 export const App: React.FC = () => {
   return <Router>
@@ -16,6 +17,7 @@ export const App: React.FC = () => {
           <Route path="/whatis">
           </Route>
           <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
