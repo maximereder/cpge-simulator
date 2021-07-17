@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router';
-import { Inputs } from '../components/Inputs';
+import { Input } from '../components/Input';
 import { Wrapper } from '../components/misc/Wrapper';
 import { leagues } from '../data/leagues';
 
@@ -14,11 +14,14 @@ export const Simulate: React.FC = () => {
 
 	const [values, setValues] = useState<Record<string, string | undefined>>({});
 
-	const subjects = Object.keys(Object.values(leagues[league].contests[contest].banks)[0].factors);
+	const subjects = leagues[league].contests[contest].subjects;
 
-	return <div>
+	return <div className={`my-4`}>
 		<Wrapper>
-			<Inputs subjects={subjects} values={values} onValuesChange={setValues} />
+			<h3 className={`font-bold text-2xl mb-4`}>Notes</h3>
+			<div className={`grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4`}>
+				{Object.keys(subjects).map(k => <Input key={k} subject={subjects[k]} value={values[k]} onChange={value => setValues({ ...values, [k]: value })} />)}
+			</div>
 
 			{/* <canvas ref="radarNotesCanvas"></canvas>
 			<canvas ref="radarAdmittedCanvas"></canvas> */}
