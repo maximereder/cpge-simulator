@@ -1,17 +1,22 @@
+export type Subject = {
+	title: string
+}
+
 export type League = {
 	title: string,
 	contests: Record<string, Contest<string>>,
 	emoji: string
 }
 
-export type Contest<Subject extends string> = {
+export type Contest<S extends string> = {
 	title: string,
-	banks: Record<string, Bank<Subject>>,
+	banks: Record<string, Bank<S>>,
+	subjects: Record<S, Subject>,
 }
 
-type Bank<Subject extends string> = {
+type Bank<S extends string> = {
 	title: string,
-	factors: Record<Subject, number>,
+	factors: Record<S, number>,
 	threshold: number,
 	schools: School[],
 }
@@ -20,4 +25,4 @@ type School = {
 	title: string,
 }
 
-type Stats<Subject extends string> = Record<Subject, number>;
+type Stats<S extends string> = Record<S, number>;
