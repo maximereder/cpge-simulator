@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { AppBar } from './components/AppBar';
 import { Home } from './pages/Home';
 import { Simulate } from './pages/Simulate';
@@ -15,6 +15,9 @@ export const App: React.FC = () => {
           </Route>
           <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/">
+            <Redirect to={`/`}/>
           </Route>
         </Switch>
       </div>

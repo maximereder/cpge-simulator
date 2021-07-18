@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import { Input } from '../components/Input';
 import { Wrapper } from '../components/misc/Wrapper';
 import { ResultGraphs } from '../components/ResultGraphs';
@@ -15,6 +16,8 @@ type Params = {
 
 export const Simulate: React.FC = () => {
 	const { league: leagueId, contest: contestId } = useParams<Params>();
+
+	if(!isExistContest(leagueId, contestId)) return <Redirect to={`/`}/>;
 
 	const [values, setValues] = useLocalStorage<Record<string, string | undefined>>(`${leagueId}:${contestId}`, {});
 
@@ -56,3 +59,7 @@ export const Simulate: React.FC = () => {
 		</Wrapper>
 	</div>;
 };
+
+const isExistContest = (league: string, constest: string) => {
+	return Object.keys(leagues).includes(league) && Object.keys(leagues[league].contests).includes(constest);
+}
