@@ -65,7 +65,7 @@ const centrale: Contest<
 const ecolenavale: Contest<
   "m1" | "m2" | "p1" | "p2" | "chimie" | "lv1" | "fr"
 > = {
-  title: "CCS",
+  title: "École Navale",
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
