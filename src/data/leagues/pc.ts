@@ -87,7 +87,119 @@ const ecolenavale: Contest<
         lv1: 10,
         fr: 18
       },
-      threshold: 1426 / 100,
+      threshold: 844/95,
+      schools: [],
+    },
+    cc: {
+      title: "Centrale Casablanca",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1110 / 100,
+      schools: [],
+    },
+		cl: {
+      title: "Centrale Lille",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1160 / 100,
+      schools: [],
+    },
+		clyon: {
+      title: "Centrale Lyon",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1200 / 100,
+      schools: [],
+    },
+		cm: {
+      title: "Centrale Marseille",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1081 / 100,
+      schools: [],
+    },
+		cn: {
+      title: "Centrale Nantes",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1212 / 100,
+      schools: [],
+    },
+		centralesupelec: {
+      title: "Centrale-Supélec",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				chimie: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1267 / 100,
+      schools: [],
+    },
+    ensam: {
+      title: "ENSAM",
+      factors: {
+        m1: 12,
+        m2: 12,
+        p1: 15,
+				p2: 15,
+				chimie: 12,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 1290 / 100,
+      schools: [],
+    },
+		estp: {
+      title: "ESTP",
+      factors: {
+        m1: 16,
+        m2: 16,
+        p1: 11,
+				p2: 11,
+				chimie: 8,
+        lv1: 12,
+        fr: 20
+      },
+      threshold: 720 / 100,
       schools: [],
     },
   },
@@ -129,7 +241,7 @@ const minesponts: Contest<
 const eaaa: Contest<
 "m1" | "m2" | "p" | "sinfo" | "fr" | "lv1" | "qcm"
 > = {
-  title: "Polytechnique",
+  title: "E3A",
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
@@ -140,34 +252,6 @@ const eaaa: Contest<
 		qcm: { title: "QCM Anglais"}
   },
   banks: {
-    ensam: {
-      title: "ENSAM",
-      factors: {
-				m1: 6,
-				m2: 5,
-				sinfo: 9,
-				p: 6,
-				fr: 6,
-				lv1: 4,
-				qcm: 2
-      },
-      threshold: 500/45,
-      schools: [],
-    },
-		estp: {
-      title: "ESTP",
-      factors: {
-				m1: 6,
-				m2: 5,
-				sinfo: 9,
-				p: 6,
-				fr: 6,
-				lv1: 4,
-				qcm: 2
-      },
-      threshold: 500/45,
-      schools: [],
-    },
 		polytech: {
       title: "Polytech",
       factors: {
