@@ -23,7 +23,6 @@ export const Emojis: React.FC<EmojisProps> = ({
 }
 
 const getEmoji = (emoji: string): string => {
-	console.log(Object.keys(emojiLib).includes(emoji), emoji);
 	if(!Object.keys(emojiLib).includes(emoji)) throw new Error(`The used emoji '${emoji}' is not added in emojiLib.`);
 	return emojiLib[emoji as keyof typeof emojiLib];
 }
