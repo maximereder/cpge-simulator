@@ -17,7 +17,7 @@ export const Emojis: React.FC<EmojisProps> = ({
 
 	return <div className={`flex justify-center items-center`}>
 		{transformedEmojis.map(({emoji, src}) => (
-			<img className={`h-10`} key={emoji} src={src} alt={emoji}/>
+			<img className={`h-10`} height={40} width={40} key={emoji} src={src} alt={emoji}/>
 		))}
 	</div>;
 }
