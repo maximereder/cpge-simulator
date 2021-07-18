@@ -414,7 +414,7 @@ const ccp: Contest<
 const eaaa: Contest<
 "m1" | "m2" | "p" | "sinfo" | "fr" | "lv1" | "qcm"
 > = {
-  title: "Polytechnique",
+  title: "E3A",
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
