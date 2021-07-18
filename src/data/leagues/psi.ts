@@ -1,4 +1,4 @@
-import { Contest } from "../../types";
+import { Contest, League } from "../../types";
 
 const polytechnique: Contest<
 "m1" | "m2" | "p" | "psii" | "fr" | "lv1"
@@ -412,7 +412,7 @@ const eaaa: Contest<
   },
 };
 
-export const psiLeague = {
+export const psiLeague: League = {
   title: "PSI",
   contests: {
     polytechnique,
@@ -421,5 +421,5 @@ export const psiLeague = {
 		ccp,
 		eaaa
   },
-  emoji: ['apple', 'gear'],
+  emojis: ['apple', 'gear'],
 };
