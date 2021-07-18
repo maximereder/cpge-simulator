@@ -1,15 +1,14 @@
-import { Contest, League } from "../../types";
+import { Contest } from "../../types";
 
 const polytechnique: Contest<
-"m1" | "m2" | "p" | "info" | "psii" | "fr" | "lv1"
+"m1" | "m2" | "p" | "psii" | "fr" | "lv1"
 > = {
   title: "Polytechnique",
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
 		p: { title : "Physique"},
-		info: { title: "Informatique"},
-		psii: { title: "Physique - S2I"},
+		psii: { title: "Physique ou S2I"},
 		fr: {title: "Français-Philosophie"},
 		lv1: {title: "LV1"},
   },
@@ -18,10 +17,9 @@ const polytechnique: Contest<
       title: "Par défaut",
       factors: {
 				m1: 8,
-				m2: 7,
-				info: 6,
+				m2: 6,
 				psii: 6,
-				p: 6,
+				p: 7,
 				fr: 6,
 				lv1: 6
       },
@@ -46,15 +44,15 @@ const centrale: Contest<
   },
   banks: {
     default: {
-      title: "Par défaut",
+      title: "Centrale-Supélec",
       factors: {
-        m1: 17,
-        m2: 17,
-        p1: 11,
-				p2: 11,
-				sinfo: 10,
+        m1: 12,
+        m2: 12,
+        p1: 15,
+				p2: 15,
+        sinfo: 12,
         lv1: 11,
-        fr: 17
+        fr: 17,
       },
       threshold: 1426 / 100,
       schools: [],
@@ -79,10 +77,10 @@ const ecolenavale: Contest<
     default: {
       title: "Par défaut",
       factors: {
-        m1: 15,
-        m2: 15,
-        p1: 13,
-				p2: 13,
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
 				sinfo: 11,
         lv1: 10,
         fr: 18
@@ -113,11 +111,11 @@ const minesponts: Contest<
       title: "Par défaut",
       factors: {
         m1: 4,
-        m2: 5,
+        m2: 3,
         p1: 3,
 				p2: 4,
 				chimie: 2,
-				sinfo: 2,
+				sinfo: 4,
 				fr: 5,
         lv1: 3,
 				info: 1
@@ -129,15 +127,15 @@ const minesponts: Contest<
 };
 
 const ccp: Contest<
-  "m1" | "m2" | "p1" | "p2" | "sinfo" | "lv1" | "fr"
+  "m" | "p" | "mspc" | "info" | "sii" | "fr" | "lv1" 
 > = {
   title: "CCP",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
-		p1: { title: "Physique "},
-		p2: { title: "Physique-Chimie "},
-		sinfo: { title: "S2I ou Informatique"},
+    m: { title: "Mathématique 1" },
+		p: { title: "Physique-Chimie"},
+		mspc: { title: "Modélisation et Ingénieurie Numérique"},
+    info: { title: "Informatique"},
+		sii: { title: "S2I"},
 		fr: { title: "Français-Philosophie"},
 		lv1: { title: "LV1"}
   },
@@ -145,95 +143,67 @@ const ccp: Contest<
     default: {
       title: "Par défaut",
       factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
+        m: 11,
+        p: 11,
+				mspc: 9,
+				info: 5,
+				sii: 9,
 				fr: 9,
         lv1: 4,
       },
       threshold: 1426 / 100,
       schools: [],
     },
-		ensai: {
-      title: "ENSAI",
+    eeigm: {
+      title: "EEIGM",
       factors: {
-        m1: 8,
-        m2: 8,
-        p1: 0,
-				p2: 0,
-				sinfo: 2,
-				fr: 6,
-        lv1: 2,
-      },
-      threshold: 1426 / 100,
-      schools: [],
-    },
-		ensi: {
-      title: "ENSI",
-      factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
-				fr: 9,
+        m: 11,
+        p: 11,
+				mspc: 9,
+				info: 5,
+				sii: 9,
+				fr: 0,
         lv1: 4,
       },
       threshold: 1426 / 100,
       schools: [],
     },
-		ensci: {
-      title: "ENSCI",
-      factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
-				fr: 9,
-        lv1: 4,
-      },
-      threshold: 1426 / 100,
-      schools: [],
-    },
-		grenobleinp: {
+    grenobleinp: {
       title: "Grenoble INP",
       factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
-				fr: 9,
+        m: 11,
+        p: 11,
+				mspc: 9,
+				info: 5,
+				sii: 9,
+				fr: 7,
         lv1: 4,
       },
       threshold: 1426 / 100,
       schools: [],
     },
-		ensgsi: {
-      title: "ENSCI",
+    ensgsi: {
+      title: "ENSGSI",
       factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
+        m: 11,
+        p: 11,
+				mspc: 9,
+				info: 5,
+				sii: 9,
 				fr: 9,
         lv1: 4,
       },
       threshold: 1426 / 100,
       schools: [],
     },
-		ensisa: {
+    ensisa: {
       title: "ENSISA",
       factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
+        m: 11,
+        p: 11,
+				mspc: 9,
+				info: 5,
+				sii: 9,
 				fr: 9,
         lv1: 4,
       },
@@ -243,11 +213,11 @@ const ccp: Contest<
 		enstib: {
       title: "ENSTIB",
       factors: {
-        m1: 2,
-        m2: 2,
-        p1: 2,
-				p2: 2,
-				sinfo: 2,
+        m: 2,
+        p: 2,
+				mspc: 2,
+				info: 2,
+				sii: 2,
 				fr: 2,
         lv1: 2,
       },
@@ -257,11 +227,11 @@ const ccp: Contest<
 		eost: {
       title: "EOST",
       factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
+        m: 14,
+        p: 14,
+				mspc: 7,
+				info: 4,
+				sii: 6,
 				fr: 9,
         lv1: 4,
       },
@@ -271,13 +241,13 @@ const ccp: Contest<
 		ecoledelair: {
       title: "École de l'Air",
       factors: {
-        m1: 11,
-        m2: 11,
-        p1: 8,
-				p2: 8,
-				sinfo: 4,
-				fr: 10,
-        lv1: 8,
+        m: 14,
+        p: 14,
+				mspc: 7,
+				info: 4,
+				sii: 6,
+				fr: 9,
+        lv1: 4,
       },
       threshold: 1426 / 100,
       schools: [],
@@ -285,11 +255,11 @@ const ccp: Contest<
 		stcyr: {
       title: "Saint Cyr",
       factors: {
-        m1: 8,
-        m2: 8,
-        p1: 6,
-				p2: 6,
-				sinfo: 4,
+        m: 8,
+        p: 9,
+				mspc: 6,
+				info: 5,
+				sii: 4,
 				fr: 8,
         lv1: 6,
       },
@@ -306,7 +276,7 @@ const eaaa: Contest<
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
-		p: { title : "Physique-Chimie"},
+		p: { title : "Physique"},
 		sinfo: { title: "S2I ou Informatique"},
 		fr: {title: "Français-Philosophie"},
 		lv1: {title: "LV1"},
@@ -316,10 +286,10 @@ const eaaa: Contest<
     ensam: {
       title: "ENSAM",
       factors: {
-				m1: 8,
-				m2: 6,
-				sinfo: 9,
-				p: 3,
+				m1: 4,
+				m2: 5,
+				sinfo: 5,
+				p: 6,
 				fr: 6,
 				lv1: 4,
 				qcm: 2
@@ -330,10 +300,10 @@ const eaaa: Contest<
 		estp: {
       title: "ESTP",
       factors: {
-				m1: 8,
-				m2: 6,
-				sinfo: 9,
-				p: 3,
+				m1: 4,
+				m2: 5,
+				sinfo: 5,
+				p: 6,
 				fr: 6,
 				lv1: 4,
 				qcm: 2
@@ -344,11 +314,11 @@ const eaaa: Contest<
 		polytech: {
       title: "Polytech",
       factors: {
-				m1: 4,
+				m1: 3,
 				m2: 0,
-				sinfo: 4,
+				sinfo: 2,
 				p: 2,
-				fr: 2,
+				fr: 3,
 				lv1: 2,
 				qcm: 2
       },
@@ -358,15 +328,13 @@ const eaaa: Contest<
   },
 };
 
-export const mpLeague: League = {
-  title: "MP",
+export const mpLeague = {
+  title: "PSI",
   contests: {
     polytechnique,
     centrale,
 		ecolenavale,
-		minesponts,
 		ccp,
-		eaaa
   },
-  emojis: ['ruler', 'apple'],
+  emoji: "",
 };
