@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react';
 import { useParams } from 'react-router';
 import { Input } from '../components/Input';
 import { Wrapper } from '../components/misc/Wrapper';
@@ -6,6 +6,7 @@ import { ResultGraphs } from '../components/ResultGraphs';
 import { ResultTable } from '../components/ResultTable';
 import { leagues } from '../data/leagues';
 import { getAverage } from '../helpers/average';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 type Params = {
 	league: string;
@@ -15,7 +16,7 @@ type Params = {
 export const Simulate: React.FC = () => {
 	const { league: leagueId, contest: contestId } = useParams<Params>();
 
-	const [values, setValues] = useState<Record<string, string | undefined>>({});
+	const [values, setValues] = useLocalStorage<Record<string, string | undefined>>(`${leagueId}:${contestId}`, {});
 
 	const contest = leagues[leagueId].contests[contestId];
 

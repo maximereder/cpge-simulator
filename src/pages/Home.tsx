@@ -3,10 +3,11 @@ import React, { useState } from 'react'
 import { Wrapper } from '../components/misc/Wrapper';
 import { leagues } from '../data/leagues';
 import { Link } from 'react-router-dom';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export const Home: React.FC = () => {
-	const [selectedLeague, setSelectedLeague] = useState<string>('');
-	const [selectedContest, setSelectedContest] = useState<string>('');
+	const [selectedLeague, setSelectedLeague] = useLocalStorage<string>('league', '');
+	const [selectedContest, setSelectedContest] = useLocalStorage<string>('contest', '');
 
 	const setLeague = (league: string) => {
 		setSelectedLeague(league);
@@ -26,7 +27,7 @@ export const Home: React.FC = () => {
 				<div className={`grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5`}>
 					{Object.keys(leagues).map(k => (
 						<div key={k} className={`group cursor-pointer ${k === selectedLeague ? 'bg-green-100' : 'bg-white'} p-8 text-center shadow-md rounded-lg transition-all hover:shadow-xl`} onClick={() => setLeague(k)}>
-							<div className={`text-4xl`}>{leagues[k].emoji}</div>
+							<div className={`text-4xl`}>{leagues[k].emojis}</div>
 							<div className={`mt-4 text-4xl font-bold truncate`}>{leagues[k].title}</div>
 						</div>
 					))}
