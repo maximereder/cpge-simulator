@@ -419,6 +419,7 @@ export const psiLeague = {
     centrale,
 		ecolenavale,
 		ccp,
+		eaaa
   },
   emoji: "",
 };
