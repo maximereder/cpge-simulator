@@ -421,5 +421,5 @@ export const psiLeague = {
 		ccp,
 		eaaa
   },
-  emoji: "",
+  emoji: ['apple', 'gear'],
 };
