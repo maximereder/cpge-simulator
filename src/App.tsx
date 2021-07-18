@@ -1,16 +1,13 @@
 import React from 'react';
-import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { AppBar } from './components/AppBar';
 import { Home } from './pages/Home';
 import { Simulate } from './pages/Simulate';
 
 export const App: React.FC = () => {
   return <Router>
     <div className={`grid min-h-screen`} style={{ gridTemplate: 'minmax(0, auto) minmax(0, 1fr) minmax(0, auto) / minmax(0, 1fr)' }}>
-      <div className="p-4 bg-green-50">
-        <div>
-          <Link to="/">Home</Link> | <Link to="/whatis">What is ?</Link>
-        </div>
-      </div>
+      <AppBar />
       <div>
         <Switch>
           <Route path="/:league/:contest">
