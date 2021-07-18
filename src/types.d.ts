@@ -5,7 +5,7 @@ export type Subject = {
 export type League = {
 	title: string,
 	contests: Record<string, Contest<string>>,
-	emoji: string
+	emojis: string[],
 }
 
 export type Contest<S extends string> = {

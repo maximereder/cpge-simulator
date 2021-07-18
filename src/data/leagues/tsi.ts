@@ -1,4 +1,4 @@
-import { Contest } from "../../types";
+import { Contest, League } from "../../types";
 
 const centrale: Contest<
   "m1" | "m2" | "p1" | "p2" | "sii" | "info" | "lv1" | "fr"
@@ -7,12 +7,12 @@ const centrale: Contest<
   subjects: {
     m1: { title: "Mathématique 1" },
     m2: { title: "Mathématique 2" },
-		p1: { title: "Physique 1"},
-		p2: { title: "Physique 2"},
-		sii: { title: "S2I"},
-		info: { title: "Informatique"},
-		lv1: { title: "LV1"},
-		fr: { title: "Français-Philosophie"}
+    p1: { title: "Physique 1" },
+    p2: { title: "Physique 2" },
+    sii: { title: "S2I" },
+    info: { title: "Informatique" },
+    lv1: { title: "LV1" },
+    fr: { title: "Français-Philosophie" }
   },
   banks: {
     default: {
@@ -141,14 +141,14 @@ const centrale: Contest<
 
 const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
   title: "CCINP",
-	subjects: {
+  subjects: {
     m: { title: "Mathématique 1" },
-		p: { title: "Physique 1"},
-		mode: { title: "Modélisation"},
-		fr: { title: "Français-Philosophie"},
-		info: { title: "Informatique"},
-		lv1: { title: "LV1"},
-		sii: { title: "S2I"}
+    p: { title: "Physique 1" },
+    mode: { title: "Modélisation" },
+    fr: { title: "Français-Philosophie" },
+    info: { title: "Informatique" },
+    lv1: { title: "LV1" },
+    sii: { title: "S2I" }
   },
   banks: {
     default: {
@@ -476,11 +476,11 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
   },
 };
 
-export const tsiLeague = {
+export const tsiLeague: League = {
   title: "TSI",
   contests: {
     centrale,
     ccp,
   },
-  emoji: "anhttpadress",
+  emojis: ['gear', 'book'],
 };

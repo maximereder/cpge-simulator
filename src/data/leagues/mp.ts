@@ -1,4 +1,4 @@
-import { Contest } from "../../types";
+import { Contest, League } from "../../types";
 
 const centrale: Contest<
   "m1" | "m2" | "p1" | "p2" | "sii" | "info" | "lv1" | "fr"
@@ -476,11 +476,11 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
   },
 };
 
-export const mpLeague = {
+export const mpLeague: League = {
   title: "MP",
   contests: {
     centrale,
     ccp,
   },
-  emoji: "anhttpadress",
+  emojis: ['ruler', 'apple'],
 };

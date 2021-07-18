@@ -1,9 +1,10 @@
 import { Lottie } from '../components/misc/Lottie';
-import React, { useState } from 'react'
+import React from 'react'
 import { Wrapper } from '../components/misc/Wrapper';
 import { leagues } from '../data/leagues';
 import { Link } from 'react-router-dom';
 import useLocalStorage from '../hooks/useLocalStorage';
+import { Emojis } from '../components/Emojis';
 
 export const Home: React.FC = () => {
 	const [selectedLeague, setSelectedLeague] = useLocalStorage<string>('league', '');
@@ -26,9 +27,9 @@ export const Home: React.FC = () => {
 				<div className={`font-bold text-2xl mb-4`}><span className={`inline-block w-6 text-green-600`}>1.</span>Choisis ta filière</div>
 				<div className={`grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5`}>
 					{Object.keys(leagues).map(k => (
-						<div key={k} className={`group cursor-pointer ${k === selectedLeague ? 'bg-green-100' : 'bg-white'} p-8 text-center shadow-md rounded-lg transition-all hover:shadow-xl`} onClick={() => setLeague(k)}>
-							<div className={`text-4xl`}>{leagues[k].emojis}</div>
-							<div className={`mt-4 text-4xl font-bold truncate`}>{leagues[k].title}</div>
+						<div key={k} className={`group cursor-pointer ${k === selectedLeague ? 'bg-green-100' : 'bg-white'} p-8 shadow-md rounded-lg transition-all hover:shadow-xl`} onClick={() => setLeague(k)}>
+							<Emojis emojis={leagues[k].emojis} />
+							<div className={`mt-4 text-4xl font-bold text-center truncate`}>{leagues[k].title}</div>
 						</div>
 					))}
 				</div>
