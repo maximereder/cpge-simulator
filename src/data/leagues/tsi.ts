@@ -66,7 +66,7 @@ const centrale: Contest<
         fr: 20,
         info: 6,
       },
-      threshold: 721 / 45,
+      threshold: 721 / 100,
       schools: [
         {
           title: "Télecom nancy",
@@ -76,7 +76,7 @@ const centrale: Contest<
         },
       ],
     },
-    arts: {
+    ensam: {
       title: "ENSAM",
       factors: {
         m1: 11,
