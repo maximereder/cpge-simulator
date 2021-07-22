@@ -51,7 +51,7 @@ const centrale: Contest<
         lv1: 3,
         fr: 5,
       },
-      threshold: 1426 / 100,
+      threshold: 365 / 30,
       schools: [],
     },
     estp: {
@@ -82,6 +82,53 @@ const centrale: Contest<
         info: 5,
       },
       threshold: 1116 / 100,
+      schools: [],
+    },
+
+		ensea: {
+      title: "ENSEA",
+      factors: {
+        m1: 12,
+        m2: 12,
+        p1: 11,
+        p2: 11,
+        sii: 20,
+        info: 6,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 1116 / 100,
+      schools: [],
+    },
+		
+		epf: {
+      title: "ENSEA",
+      factors: {
+        m1: 12,
+        m2: 12,
+        p1: 11,
+        p2: 11,
+        sii: 20,
+        info: 6,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 1116 / 100,
+      schools: [],
+    },
+		iogs: {
+      title: "Institut d'Optique Graduate School",
+      factors: {
+        m1: 12,
+        m2: 12,
+        p1: 11,
+        p2: 11,
+        sii: 20,
+        info: 6,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 1350 / 100,
       schools: [],
     },
 		cc: {

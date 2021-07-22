@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
 						<Lottie url={'https://assets10.lottiefiles.com/packages/lf20_ybiszbil.json'} />
 					</div>
 					<h1 className={`font-bold text-3xl mb-2`}>Simule ton concours !</h1>
-					<p>Simulateur d'admissibilité des Classes Préparatoires Scientifiques</p>
+					<p>Tu es en classes préparatoires scientifiques et tu souhaites en savoir plus sur tes admissibilités ? Alors n'hésite plus !</p>
 				</div>
 				<div>
 					<div className={`mt-8 mb-4`}>

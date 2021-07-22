@@ -44,21 +44,6 @@ const centrale: Contest<
 		lv1: { title: "LV1"},
   },
   banks: {
-    default: {
-      title: "Par défaut",
-      factors: {
-        m1: 12,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-        chimie: 12,
-        sinfo: 12,
-        lv1: 11,
-        fr: 17,
-      },
-      threshold: 1426 / 100,
-      schools: [],
-    },
     cc: {
       title: "Centrale Casablanca",
       factors: {
@@ -164,6 +149,51 @@ const centrale: Contest<
       threshold: 1290 / 100,
       schools: [],
     },
+    ecolenavale: {
+      title: "École navale",
+      factors: {
+        m1: 12,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+        chimie: 12,
+        sinfo: 12,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 844 / 100,
+      schools: [],
+    },
+		ensea: {
+      title: "ENSEA",
+      factors: {
+        m1: 12,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+        chimie: 12,
+        sinfo: 12,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 750 / 100,
+      schools: [],
+    },
+		epf: {
+      title: "EPF",
+      factors: {
+        m1: 12,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+        chimie: 12,
+        sinfo: 12,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 565 / 100,
+      schools: [],
+    },
 		estp: {
       title: "ESTP",
       factors: {
@@ -179,9 +209,40 @@ const centrale: Contest<
       threshold: 720 / 100,
       schools: [],
     },
+    iogs: {
+      title: "Institut d'Optique Graduate School",
+      factors: {
+        m1: 12,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+        chimie: 12,
+        sinfo: 12,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 1185 / 100,
+      schools: [],
+    },
+		utt: {
+      title: "UTT",
+      factors: {
+        m1: 12,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+        chimie: 12,
+        sinfo: 12,
+        lv1: 11,
+        fr: 17,
+      },
+      threshold: 1003 / 100,
+      schools: [],
+    },
   },
 };
 
+/*
 const ecolenavale: Contest<
   "m1" | "m2" | "p1" | "p2" | "chimie" | "lv1" | "fr"
 > = {
@@ -212,6 +273,7 @@ const ecolenavale: Contest<
     },
   },
 };
+*/
 
 const minesponts: Contest<
   "m1" | "m2" | "p1" | "p2" | "chimie" |  "lv1" | "info" | "fr"
@@ -438,7 +500,6 @@ export const pcLeague: League = {
     minesponts,
     minestelecom,
     ccp,
-    ecolenavale,
     eaaa
   },
   emojis: ['apple', 'alembic'],

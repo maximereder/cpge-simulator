@@ -45,20 +45,6 @@ const centrale: Contest<
 		lv1: { title: "LV1"},
   },
   banks: {
-    default: {
-      title: "Par défaut",
-      factors: {
-        m1: 17,
-        m2: 17,
-        p1: 11,
-				p2: 11,
-				sinfo: 10,
-        lv1: 11,
-        fr: 17
-      },
-      threshold: 1130 / 100,
-      schools: [],
-    },
 		cc: {
       title: "Centrale Casablanca",
       factors: {
@@ -157,6 +143,48 @@ const centrale: Contest<
       threshold: 1157 / 100,
       schools: [],
     },
+		ecolenavale: {
+      title: "École navale",
+      factors: {
+        m1: 17,
+        m2: 17,
+        p1: 11,
+				p2: 11,
+				sinfo: 10,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 769 / 100,
+      schools: [],
+    },
+		ensea: {
+      title: "ENSEA",
+      factors: {
+        m1: 17,
+        m2: 17,
+        p1: 11,
+				p2: 11,
+				sinfo: 10,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 750 / 100,
+      schools: [],
+    },
+		epf: {
+      title: "EPF",
+      factors: {
+        m1: 17,
+        m2: 17,
+        p1: 11,
+				p2: 11,
+				sinfo: 10,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 574 / 100,
+      schools: [],
+    },
 		estp: {
       title: "ESTP",
       factors: {
@@ -171,9 +199,37 @@ const centrale: Contest<
       threshold: 645 / 100,
       schools: [],
     },
+		iogs: {
+      title: "Institut d'Optique Graduate School",
+      factors: {
+        m1: 17,
+        m2: 17,
+        p1: 11,
+				p2: 11,
+				sinfo: 10,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 1144 / 100,
+      schools: [],
+    },
+		utt: {
+      title: "UTT",
+      factors: {
+        m1: 17,
+        m2: 17,
+        p1: 11,
+				p2: 11,
+				sinfo: 10,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 1002 / 100,
+      schools: [],
+    },
   },
 };
-
+/*
 const ecolenavale: Contest<
   "m1" | "m2" | "p1" | "p2" | "sinfo" | "lv1" | "fr"
 > = {
@@ -204,6 +260,7 @@ const ecolenavale: Contest<
     },
   },
 };
+*/
 
 const minesponts: Contest<
   "m1" | "m2" | "p1" | "p2" | "chimie" | "sinfo" | "lv1" | "info" | "fr"
@@ -485,7 +542,6 @@ export const mpLeague: League = {
     centrale,
 		minesponts,
 		minestelecom,
-		ecolenavale,
 		ccp,
 		eaaa
   },
