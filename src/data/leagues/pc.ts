@@ -246,6 +246,39 @@ const minesponts: Contest<
   },
 };
 
+const minestelecom: Contest<
+  "m1" | "m2" | "p1" | "p2" | "chimie" | "lv1" | "info" | "fr"
+> = {
+  title: "Mines-Télécom",
+  subjects: {
+    m1: { title: "Mathématique 1" },
+    m2: { title: "Mathématique 2" },
+		p1: { title: "Physique 1"},
+		p2: { title: "Physique 2"},
+		chimie: { title: "Chimie"},
+		fr: { title: "Français-Philosophie"},
+		info: { title: "Informatique"},
+		lv1: { title: "LV1"}
+  },
+  banks: {
+    default: {
+      title: "Par défaut",
+      factors: {
+        m1: 4,
+        m2: 3,
+        p1: 4,
+				p2: 5,
+				chimie: 4,
+				fr: 5,
+        lv1: 3,
+				info: 2
+      },
+      threshold: 376 / 30,
+      schools: [],
+    },
+  },
+};
+
 const eaaa: Contest<
 "m1" | "m2" | "p" | "sinfo" | "fr" | "lv1" | "qcm"
 > = {
@@ -402,6 +435,9 @@ export const pcLeague: League = {
   contests: {
     polytechnique,
     centrale,
+    minesponts,
+    minestelecom,
+    ccp,
     ecolenavale,
     eaaa
   },

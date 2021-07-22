@@ -240,6 +240,42 @@ const minesponts: Contest<
   },
 };
 
+const minestelecom: Contest<
+  "m1" | "m2" | "p1" | "p2" | "chimie" | "sinfo" | "lv1" | "info" | "fr"
+> = {
+  title: "Mines-Télécom",
+  subjects: {
+    m1: { title: "Mathématique 1" },
+    m2: { title: "Mathématique 2" },
+		p1: { title: "Physique 1"},
+		p2: { title: "Physique 2"},
+		chimie: { title: "Chimie"},
+		sinfo: { title: "S2I ou Informatique"},
+		fr: { title: "Français-Philosophie"},
+		info: { title: "Informatique"},
+		lv1: { title: "LV1"}
+  },
+  banks: {
+    default: {
+      title: "Par défaut",
+      factors: {
+        m1: 4,
+        m2: 5,
+        p1: 3,
+				p2: 4,
+				chimie: 2,
+				sinfo: 2,
+				fr: 5,
+        lv1: 3,
+				info: 2
+      },
+      threshold: 376 / 30,
+      schools: [],
+    },
+  },
+};
+
+
 const ccp: Contest<
   "m1" | "m2" | "p1" | "p2" | "sinfo" | "lv1" | "fr"
 > = {
@@ -447,8 +483,9 @@ export const mpLeague: League = {
   contests: {
     polytechnique,
     centrale,
-		ecolenavale,
 		minesponts,
+		minestelecom,
+		ecolenavale,
 		ccp,
 		eaaa
   },
