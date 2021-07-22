@@ -290,7 +290,7 @@ const minesponts: Contest<
         lv1: 3,
 				info: 1
       },
-      threshold: 376 / 30,
+      threshold: 484 / 39,
       schools: [],
     },
   },
