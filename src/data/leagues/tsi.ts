@@ -16,7 +16,7 @@ const centrale: Contest<
   },
   banks: {
     default: {
-      title: "Centrale-Supélec",
+      title: "Par défaut",
       factors: {
         m1: 12,
         m2: 12,
@@ -67,14 +67,7 @@ const centrale: Contest<
         info: 6,
       },
       threshold: 721 / 100,
-      schools: [
-        {
-          title: "Télecom nancy",
-        },
-        {
-          title: "Mine Saint-Étienne",
-        },
-      ],
+      schools: [],
     },
     ensam: {
       title: "ENSAM",

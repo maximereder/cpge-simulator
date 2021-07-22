@@ -23,7 +23,7 @@ const polytechnique: Contest<
 				fr: 6,
 				lv1: 6
       },
-      threshold: 500/45,
+      threshold: 500/39,
       schools: [],
     },
   },
@@ -44,7 +44,7 @@ const centrale: Contest<
   },
   banks: {
     default: {
-      title: "Centrale-Supélec",
+      title: "Par défaut",
       factors: {
         m1: 12,
         m2: 12,
@@ -55,6 +55,118 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1426 / 100,
+      schools: [],
+    },
+    cc: {
+      title: "Centrale Casablanca",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1200 / 100,
+      schools: [],
+    },
+		cl: {
+      title: "Centrale Lille",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1195 / 100,
+      schools: [],
+    },
+		clyon: {
+      title: "Centrale Lyon",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1301 / 100,
+      schools: [],
+    },
+		cm: {
+      title: "Centrale Marseille",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1131 / 100,
+      schools: [],
+    },
+		cn: {
+      title: "Centrale Nantes",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1307 / 100,
+      schools: [],
+    },
+		centralesupelec: {
+      title: "Centrale-Supélec",
+      factors: {
+        m1: 13,
+        m2: 13,
+        p1: 15,
+				p2: 15,
+				sinfo: 11,
+        lv1: 10,
+        fr: 18
+      },
+      threshold: 1345 / 100,
+      schools: [],
+    },
+		ensam: {
+      title: "ENSAM",
+      factors: {
+        m1: 12,
+        m2: 12,
+        p1: 15,
+				p2: 15,
+				sinfo: 12,
+        lv1: 11,
+        fr: 17
+      },
+      threshold: 987 / 100,
+      schools: [],
+    },
+		estp: {
+      title: "ESTP",
+      factors: {
+        m1: 11,
+        m2: 11,
+        p1: 12,
+				p2: 12,
+				sinfo: 16,
+        lv1: 12,
+        fr: 20
+      },
+      threshold: 596 / 100,
       schools: [],
     },
   },
@@ -88,118 +200,6 @@ const ecolenavale: Contest<
       threshold: 980/95,
       schools: [],
     },
-		cc: {
-      title: "Centrale Casablanca",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1110 / 100,
-      schools: [],
-    },
-		cl: {
-      title: "Centrale Lille",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1160 / 100,
-      schools: [],
-    },
-		clyon: {
-      title: "Centrale Lyon",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1200 / 100,
-      schools: [],
-    },
-		cm: {
-      title: "Centrale Marseille",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1081 / 100,
-      schools: [],
-    },
-		cn: {
-      title: "Centrale Nantes",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1212 / 100,
-      schools: [],
-    },
-		centralesupelec: {
-      title: "Centrale-Supélec",
-      factors: {
-        m1: 13,
-        m2: 13,
-        p1: 15,
-				p2: 15,
-				sinfo: 11,
-        lv1: 10,
-        fr: 18
-      },
-      threshold: 1267 / 100,
-      schools: [],
-    },
-		ensam: {
-      title: "ENSAM",
-      factors: {
-        m1: 12,
-        m2: 12,
-        p1: 15,
-				p2: 15,
-				sinfo: 12,
-        lv1: 11,
-        fr: 17
-      },
-      threshold: 987 / 100,
-      schools: [],
-    },
-		estp: {
-      title: "ESTP",
-      factors: {
-        m1: 11,
-        m2: 11,
-        p1: 12,
-				p2: 12,
-				sinfo: 16,
-        lv1: 12,
-        fr: 20
-      },
-      threshold: 681 / 100,
-      schools: [],
-    },
   },
 };
 
@@ -213,7 +213,7 @@ const minesponts: Contest<
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
-		sinfo: { title: "S2I ou Informatique"},
+		sinfo: { title: "S2I"},
 		fr: { title: "Français-Philosophie"},
 		info: { title: "Informatique"},
 		lv1: { title: "LV1"}
@@ -232,7 +232,7 @@ const minesponts: Contest<
         lv1: 3,
 				info: 1
       },
-      threshold: 1426 / 100,
+      threshold: 376 / 30,
       schools: [],
     },
   },
@@ -263,7 +263,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
     eeigm: {
@@ -277,7 +277,7 @@ const ccp: Contest<
 				fr: 0,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
     grenobleinp: {
@@ -291,7 +291,7 @@ const ccp: Contest<
 				fr: 7,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
     ensgsi: {
@@ -305,7 +305,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
     ensisa: {
@@ -319,7 +319,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
 		enstib: {
@@ -333,7 +333,7 @@ const ccp: Contest<
 				fr: 2,
         lv1: 2,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
 		eost: {
@@ -347,7 +347,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
 		ecoledelair: {
@@ -361,7 +361,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
 		stcyr: {
@@ -375,7 +375,7 @@ const ccp: Contest<
 				fr: 8,
         lv1: 6,
       },
-      threshold: 1426 / 100,
+      threshold: 861 / 100,
       schools: [],
     },
   },

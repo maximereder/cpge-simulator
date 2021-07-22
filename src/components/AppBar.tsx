@@ -6,7 +6,7 @@ export const AppBar: React.FC = () => {
 	return <div className={`sticky top-0 bg-white bg-opacity-60 backdrop-blur-sm shadow-sm z-20`}>
 		<Wrapper>
 			<div className={`flex justify-between items-center`}>
-				<Link className={`block py-4`} to="/"><h1 className={`font-bold`}>SimuleTonConcours.fr</h1></Link>
+				<Link className={`block py-4`} to="/"><h1 className={`font-bold`}>Simule Ton Concours !</h1></Link>
 				<nav>
 					<a className={`block h-6 w-6`} href="https://github.com/maxou54200/cpge-simulator" target="_blank" rel="noopener"><GithubIcon /></a>
 				</nav>

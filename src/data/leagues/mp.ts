@@ -25,7 +25,7 @@ const polytechnique: Contest<
 				fr: 6,
 				lv1: 6
       },
-      threshold: 500/45,
+      threshold: 484/39,
       schools: [],
     },
   },
@@ -234,7 +234,7 @@ const minesponts: Contest<
         lv1: 3,
 				info: 1
       },
-      threshold: 1426 / 100,
+      threshold: 376 / 30,
       schools: [],
     },
   },
@@ -265,7 +265,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ensai: {
@@ -279,7 +279,7 @@ const ccp: Contest<
 				fr: 6,
         lv1: 2,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ensi: {
@@ -293,7 +293,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ensci: {
@@ -307,7 +307,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		grenobleinp: {
@@ -321,7 +321,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ensgsi: {
@@ -335,7 +335,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ensisa: {
@@ -349,7 +349,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		enstib: {
@@ -363,7 +363,7 @@ const ccp: Contest<
 				fr: 2,
         lv1: 2,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		eost: {
@@ -377,7 +377,7 @@ const ccp: Contest<
 				fr: 9,
         lv1: 4,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		ecoledelair: {
@@ -391,7 +391,7 @@ const ccp: Contest<
 				fr: 10,
         lv1: 8,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
 		stcyr: {
@@ -405,7 +405,7 @@ const ccp: Contest<
 				fr: 8,
         lv1: 6,
       },
-      threshold: 1426 / 100,
+      threshold: 8.61,
       schools: [],
     },
   },
