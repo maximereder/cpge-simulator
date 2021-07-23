@@ -23,7 +23,7 @@ export const Input: React.FC<InputProps> = ({
 	}
 
 	return <label className={`block`}>
-		<div className={`font-semibold`}>{subject.title}</div>
+		<div className={`font-semibold truncate`}>{subject.title}</div>
 		<input
 			className={`block mt-2 w-full bg-gray-50 border-2 border-gray-200 text-xl font-bold p-2 rounded-lg hover:border-green-100 focus:hover:border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-400`}
 			type="number"
