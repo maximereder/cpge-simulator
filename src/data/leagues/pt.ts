@@ -1,4 +1,5 @@
 import { Contest, League } from "../../types";
+import { Source } from "../../helpers/source";
 
 const general: Contest<
 "ma" | "mb" | "mc" | "pa" | "pb" | "infomod" | "fra" | "frb" | "lva" | "siia" | "siib"
@@ -34,6 +35,7 @@ const general: Contest<
 				siib: 6
       },
       threshold: 12,
+			source: Source.FORUM,
       schools: [],
     },
 		minespont: {
@@ -52,6 +54,7 @@ const general: Contest<
 				siib: 0
       },
       threshold: 484 / 39,
+			source: Source.FORUM,
       schools: [],
     },
 		ensam: {
@@ -70,6 +73,7 @@ const general: Contest<
 				siib: 6
       },
       threshold: 10.5,
+			source: Source.FORUM,
       schools: [],
     },
 		ccp: {
@@ -88,6 +92,7 @@ const general: Contest<
 				siib: 7
       },
       threshold: 861 / 100,
+			source: Source.FORUM,
       schools: [],
     },
 		enscp: {
@@ -106,6 +111,7 @@ const general: Contest<
 				siib: 6
       },
       threshold: 12.5,
+			source: Source.FORUM,
       schools: [],
     },
 		ensr: {
@@ -124,6 +130,7 @@ const general: Contest<
 				siib: 6
       },
       threshold: 12.5,
+			source: Source.FORUM,
       schools: [],
     },
 		polytechnique: {
@@ -142,6 +149,7 @@ const general: Contest<
 				siib: 10
       },
       threshold: 17,
+			source: Source.FORUM,
       schools: [],
     },
 		polytech: {
@@ -160,6 +168,7 @@ const general: Contest<
 				siib: 4
       },
       threshold: 10,
+			source: Source.FORUM,
       schools: [],
     },
 		minestelecom: {
@@ -178,6 +187,7 @@ const general: Contest<
 				siib: 0
       },
       threshold: 11.77,
+			source: Source.FORUM,
       schools: [],
     },
 		fesic: {
@@ -196,6 +206,7 @@ const general: Contest<
 				siib: 0
       },
       threshold: 9,
+			source: Source.FORUM,
       schools: [],
     },
   },

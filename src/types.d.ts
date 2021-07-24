@@ -1,3 +1,5 @@
+import { Source } from "./helpers/source";
+
 export type Subject = {
 	title: string
 }
@@ -18,6 +20,7 @@ type Bank<S extends string> = {
 	title: string,
 	factors: Record<S, number>,
 	threshold: number,
+	source: Source,
 	schools: School[],
 }
 

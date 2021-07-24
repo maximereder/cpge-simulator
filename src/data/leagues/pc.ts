@@ -1,4 +1,5 @@
 import { Contest, League } from "../../types";
+import { Source } from "../../helpers/source";
 
 const polytechnique: Contest<
   "m1" | "p1" | "p2" | "chimie" | "lv1" | "fr"
@@ -24,6 +25,7 @@ const polytechnique: Contest<
         fr: 17,
       },
       threshold: 486 / 39,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -57,6 +59,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1160 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cl: {
@@ -72,6 +75,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1194 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		clyon: {
@@ -87,6 +91,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1275 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cm: {
@@ -102,6 +107,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1074 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cn: {
@@ -117,6 +123,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1281 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		centralesupelec: {
@@ -132,6 +139,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1275 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensam: {
@@ -147,6 +155,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1290 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ecolenavale: {
@@ -162,6 +171,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 844 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		ensea: {
@@ -177,6 +187,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 750 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		epf: {
@@ -192,6 +203,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 565 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		estp: {
@@ -207,6 +219,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 720 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     iogs: {
@@ -222,6 +235,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1185 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		utt: {
@@ -237,6 +251,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1003 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -303,6 +318,7 @@ const minesponts: Contest<
 				info: 2
       },
       threshold: 376 / 30,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -336,6 +352,7 @@ const minestelecom: Contest<
 				info: 2
       },
       threshold: 376 / 30,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -367,6 +384,7 @@ const eaaa: Contest<
 				qcm: 2
       },
       threshold: 500/45,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -396,6 +414,7 @@ const ccp: Contest<
         lv1: 4,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		grenobleinp: {
@@ -409,6 +428,7 @@ const ccp: Contest<
         lv1: 4,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		ensgsi: {
@@ -422,6 +442,7 @@ const ccp: Contest<
         lv1: 4,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		ensisa: {
@@ -435,6 +456,7 @@ const ccp: Contest<
         lv1: 4,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		enstib: {
@@ -448,6 +470,7 @@ const ccp: Contest<
         lv1: 2,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		eost: {
@@ -461,6 +484,7 @@ const ccp: Contest<
         lv1: 4,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		ecoledelair: {
@@ -474,6 +498,7 @@ const ccp: Contest<
         lv1: 8,
       },
       threshold: 861 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },

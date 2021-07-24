@@ -1,4 +1,5 @@
 import { Contest, League } from "../../types";
+import { Source } from "../../helpers/source";
 
 const centrale: Contest<
   "m1" | "m2" | "p1" | "p2" | "sii" | "info" | "lv1" | "fr"
@@ -28,6 +29,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1426 / 100,
+      source: Source.OFFICIAL,
       schools: [
         { title: "Centrale-Supélec" },
         { title: "ECL" },
@@ -52,6 +54,7 @@ const centrale: Contest<
         fr: 5,
       },
       threshold: 365 / 30,
+      source: Source.OFFICIAL,
       schools: [],
     },
     estp: {
@@ -67,6 +70,7 @@ const centrale: Contest<
         info: 6,
       },
       threshold: 721 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensam: {
@@ -82,6 +86,7 @@ const centrale: Contest<
         info: 5,
       },
       threshold: 1116 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 
@@ -98,6 +103,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1116 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		
@@ -114,6 +120,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1116 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		iogs: {
@@ -129,6 +136,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1350 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cc: {
@@ -144,6 +152,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1130 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cl: {
@@ -159,6 +168,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1160 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		clyon: {
@@ -174,6 +184,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1411 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cm: {
@@ -189,6 +200,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1264 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		cn: {
@@ -204,6 +216,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1426 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
 		centralesupelec: {
@@ -219,6 +232,7 @@ const centrale: Contest<
         fr: 17,
       },
       threshold: 1313 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     esix: {
@@ -234,6 +248,7 @@ const centrale: Contest<
         info: 5,
       },
       threshold: 1411 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ismans: {
@@ -249,6 +264,7 @@ const centrale: Contest<
         info: 15,
       },
       threshold: 1264 / 100,
+      source: Source.OFFICIAL,
       schools: [],
     },
     mineTelecom: {
@@ -264,6 +280,7 @@ const centrale: Contest<
         info: 2,
       },
       threshold: 319 / 30,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
@@ -293,6 +310,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 15,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     iiil: {
@@ -307,6 +325,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 5,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ecam: {
@@ -321,6 +340,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 12,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     eil: {
@@ -335,6 +355,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 12,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     eivp: {
@@ -349,6 +370,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 7,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensps: {
@@ -363,6 +385,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 8,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensr: {
@@ -377,6 +400,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 8,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensait: {
@@ -391,6 +415,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 7,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensisa: {
@@ -405,6 +430,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 15,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     entpe: {
@@ -419,6 +445,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 7,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     esb: {
@@ -433,6 +460,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 5,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     esigelec: {
@@ -447,6 +475,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 5,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     episen: {
@@ -461,6 +490,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 4,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensirem: {
@@ -475,6 +505,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 8,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     estia: {
@@ -489,6 +520,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 4,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     grenobleinp: {
@@ -503,6 +535,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 15,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     isat: {
@@ -517,6 +550,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 12,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     isep: {
@@ -531,6 +565,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 4,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     lorraineinpensgsi: {
@@ -545,6 +580,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 15,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     lorraineinpenstib: {
@@ -559,6 +595,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 2,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     polytech: {
@@ -573,6 +610,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 4,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     toulouseinp: {
@@ -587,6 +625,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 16,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
     ensibs: {
@@ -601,6 +640,7 @@ const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
         sii: 4,
       },
       threshold: 8,
+      source: Source.OFFICIAL,
       schools: [],
     },
   },
