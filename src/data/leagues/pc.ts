@@ -5,7 +5,7 @@ const polytechnique: Contest<
 > = {
   title: "Polytechnique",
   subjects: {
-    m1: { title: "Mathématique 1" },
+    m1: { title: "Mathématiques 1" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
     chimie: { title: "Chimie"},
@@ -34,8 +34,8 @@ const centrale: Contest<
 > = {
   title: "CCS",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
     chimie: { title: "Chimie"},
@@ -248,8 +248,8 @@ const ecolenavale: Contest<
 > = {
   title: "École Navale",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
     chimie: { title: "Chimie"},
@@ -280,8 +280,8 @@ const minesponts: Contest<
 > = {
   title: "Mines-Ponts",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -313,8 +313,8 @@ const minestelecom: Contest<
 > = {
   title: "Mines-Télécom",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -346,8 +346,8 @@ const eaaa: Contest<
 > = {
   title: "E3A",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p: { title : "Physique-Modélisation"},
 		sinfo: { title: "S2I ou Informatique"},
 		fr: {title: "Français-Philosophie"},
@@ -377,7 +377,7 @@ const ccp: Contest<
 > = {
   title: "CCP",
   subjects: {
-    m: { title: "Mathématique 1" },
+    m: { title: "Mathématiques 1" },
 		p: { title: "Physique "},
 		mspc: { title: "Modélisation des Systèmes Physiques et Chimiques"},
     chimie: { title: "Chimie"},
@@ -385,19 +385,6 @@ const ccp: Contest<
 		lv1: { title: "LV1"}
   },
   banks: {
-    default: {
-      title: "Par défaut",
-      factors: {
-        m: 14,
-        p: 15,
-				mspc: 8,
-				chimie: 8,
-				fr: 9,
-        lv1: 4,
-      },
-      threshold: 861 / 100,
-      schools: [],
-    },
     eeigm: {
       title: "EEIGM",
       factors: {

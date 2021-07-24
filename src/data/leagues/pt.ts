@@ -5,9 +5,9 @@ const general: Contest<
 > = {
   title: "Concours filière PT",
   subjects: {
-    ma: { title: "Mathématique A" },
-    mb: { title: "Mathématique B" },
-		mc: { title: "Mathématique C" },
+    ma: { title: "Mathématiquess A" },
+    mb: { title: "Mathématiquess B" },
+		mc: { title: "Mathématiques C" },
 		pa: { title: "Physique A"},
 		pb: { title: "Physique B"},
 		infomod: { title: "Informatique ou Modélisation"},

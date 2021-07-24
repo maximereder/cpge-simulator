@@ -5,8 +5,8 @@ const centrale: Contest<
 > = {
   title: "CCS",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
     p1: { title: "Physique 1" },
     p2: { title: "Physique 2" },
     sii: { title: "S2I" },
@@ -102,7 +102,7 @@ const centrale: Contest<
     },
 		
 		epf: {
-      title: "ENSEA",
+      title: "EPF",
       factors: {
         m1: 12,
         m2: 12,
@@ -272,7 +272,7 @@ const centrale: Contest<
 const ccp: Contest<"m" | "p" | "mode" | "fr" | "info" | "lv1" | "sii"> = {
   title: "CCINP",
   subjects: {
-    m: { title: "Mathématique 1" },
+    m: { title: "Mathématiques 1" },
     p: { title: "Physique 1" },
     mode: { title: "Modélisation" },
     fr: { title: "Français-Philosophie" },

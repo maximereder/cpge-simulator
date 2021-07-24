@@ -5,8 +5,8 @@ const polytechnique: Contest<
 > = {
   title: "Polytechnique",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p: { title : "Physique"},
 		info: { title: "Informatique"},
 		psii: { title: "Physique - S2I"},
@@ -36,8 +36,8 @@ const centrale: Contest<
 > = {
   title: "CCS",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique-Chimie 1"},
 		p2: { title: "Physique-Chimie 2"},
 		sinfo: { title: "S2I ou Informatique"},
@@ -235,8 +235,8 @@ const ecolenavale: Contest<
 > = {
   title: "École Navale",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique-Chimie 1"},
 		p2: { title: "Physique-Chimie 2"},
 		sinfo: { title: "S2I ou Informatique"},
@@ -267,8 +267,8 @@ const minesponts: Contest<
 > = {
   title: "Mines-Ponts",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -302,8 +302,8 @@ const minestelecom: Contest<
 > = {
   title: "Mines-Télécom",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -338,8 +338,8 @@ const ccp: Contest<
 > = {
   title: "CCP",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique "},
 		p2: { title: "Physique-Chimie "},
 		sinfo: { title: "S2I ou Informatique"},
@@ -347,20 +347,6 @@ const ccp: Contest<
 		lv1: { title: "LV1"}
   },
   banks: {
-    default: {
-      title: "Par défaut",
-      factors: {
-        m1: 12,
-        m2: 12,
-        p1: 7,
-				p2: 7,
-				sinfo: 7,
-				fr: 9,
-        lv1: 4,
-      },
-      threshold: 8.61,
-      schools: [],
-    },
 		ensai: {
       title: "ENSAI",
       factors: {
@@ -509,8 +495,8 @@ const eaaa: Contest<
 > = {
   title: "E3A",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p: { title : "Physique-Chimie"},
 		sinfo: { title: "S2I ou Informatique"},
 		fr: {title: "Français-Philosophie"},

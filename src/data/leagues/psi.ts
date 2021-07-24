@@ -5,8 +5,8 @@ const polytechnique: Contest<
 > = {
   title: "Polytechnique",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p: { title : "Physique"},
 		psii: { title: "Physique ou S2I"},
 		fr: {title: "Français-Philosophie"},
@@ -34,8 +34,8 @@ const centrale: Contest<
 > = {
   title: "CCS",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique-Chimie 1"},
 		p2: { title: "Physique-Chimie 2"},
 		sinfo: { title: "S2I ou Informatique"},
@@ -235,8 +235,8 @@ const ecolenavale: Contest<
 > = {
   title: "École Navale",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique-Chimie 1"},
 		p2: { title: "Physique-Chimie 2"},
 		sinfo: { title: "S2I ou Informatique"},
@@ -266,8 +266,8 @@ const minesponts: Contest<
 > = {
   title: "Mines-Ponts",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -301,8 +301,8 @@ const minestelecom: Contest<
 > = {
   title: "Mines-Télécom",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p1: { title: "Physique 1"},
 		p2: { title: "Physique 2"},
 		chimie: { title: "Chimie"},
@@ -336,7 +336,7 @@ const ccp: Contest<
 > = {
   title: "CCP",
   subjects: {
-    m: { title: "Mathématique 1" },
+    m: { title: "Mathématiques 1" },
 		p: { title: "Physique-Chimie"},
 		mspc: { title: "Modélisation et Ingénieurie Numérique"},
     info: { title: "Informatique"},
@@ -345,20 +345,6 @@ const ccp: Contest<
 		lv1: { title: "LV1"}
   },
   banks: {
-    default: {
-      title: "Par défaut",
-      factors: {
-        m: 11,
-        p: 11,
-				mspc: 9,
-				info: 5,
-				sii: 9,
-				fr: 9,
-        lv1: 4,
-      },
-      threshold: 861 / 100,
-      schools: [],
-    },
     eeigm: {
       title: "EEIGM",
       factors: {
@@ -479,8 +465,8 @@ const eaaa: Contest<
 > = {
   title: "E3A",
   subjects: {
-    m1: { title: "Mathématique 1" },
-    m2: { title: "Mathématique 2" },
+    m1: { title: "Mathématiques 1" },
+    m2: { title: "Mathématiques 2" },
 		p: { title : "Physique"},
 		sinfo: { title: "S2I ou Informatique"},
 		fr: {title: "Français-Philosophie"},
