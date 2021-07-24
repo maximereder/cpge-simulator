@@ -5,6 +5,7 @@ import { leagues } from '../data/leagues';
 import { Link } from 'react-router-dom';
 import useLocalStorage from '../hooks/useLocalStorage';
 import { Emojis } from '../components/Emojis';
+import { Adsense } from '../components/Adsense';
 
 export const Home: React.FC = () => {
 	const [selectedLeague, setSelectedLeague] = useLocalStorage<string>('league', '');
@@ -17,16 +18,17 @@ export const Home: React.FC = () => {
 
 	return <div>
 		<Wrapper>
-			<div className={`grid gap-16 grid-cols-1 md:grid-cols-2 items-start`}>
+			<div className={`grid gap-x-16 grid-cols-1 md:grid-cols-2 items-start`}>
 				<div className={`md:sticky md:top-0`}>
 					<div className={`h-60 md:h-auto md:m-8`}>
 						<Lottie url={'https://assets10.lottiefiles.com/packages/lf20_ybiszbil.json'} />
 					</div>
 					<h1 className={`font-bold text-3xl mb-2`}>Simule ton concours !</h1>
 					<p>Tu es en classes préparatoires scientifiques et tu souhaites en savoir plus sur tes admissibilités ? Alors n'hésite plus !</p>
+					<Adsense slot={'2709419352'} />
 				</div>
 				<div>
-					<div className={`mt-8 mb-4`}>
+					<div className={`mb-4 mt-4`}>
 						<div className={`font-bold text-2xl mb-4`}><span className={`inline-block w-6 text-green-600`}>1.</span>Choisis ta filière</div>
 						<div className={`grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3`}>
 							{Object.keys(leagues).map(k => (
