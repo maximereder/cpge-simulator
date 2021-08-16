@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Subject } from '../types';
 import { Chart, BarController, BarElement, LinearScale, CategoryScale, Title, Legend } from 'chart.js';
 import { Graph } from './Graph';
+import { thresholdNote } from '../helpers/note';
 
 Chart.register(BarController, BarElement, LinearScale, CategoryScale, Title, Legend);
 
@@ -24,7 +25,7 @@ export const ResultGraphs: React.FC<ResultGraphsProps> = ({
 	values,
 	items,
 }) => {
-	const normalizedValues = Object.keys(subjects).map(k => Number(values[k]) || 0);
+	const normalizedValues = Object.keys(subjects).map(k => thresholdNote(values[k]));
 
 	return <div className={`grid gap-4 grid-cols-1 md:grid-cols-2 mt-8`}>
 		<Graph
