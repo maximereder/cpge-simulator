@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Subject } from '../types';
 import { Chart, BarController, BarElement, LinearScale, CategoryScale, Title, Legend } from 'chart.js';
 import { Graph } from './Graph';

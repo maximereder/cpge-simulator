@@ -66,8 +66,8 @@ export const Graph: React.FC<GraphProps> = ({
 	return <div>
 		<div className={`font-semibold text-xl`}>{title}</div>
 		<div className={`flex items-center mb-2`}>
-			{datasets.map(set => (
-				<div className={`flex items-center mr-4`}>
+			{datasets.map((set, index) => (
+				<div key={index} className={`flex items-center mr-4`}>
 					<div className={'h-4 w-10 mr-1 rounded-sm'} style={{backgroundColor: set.backgroundColor?.toString()}}></div>
 					<div>{set.label}</div>
 				</div>
