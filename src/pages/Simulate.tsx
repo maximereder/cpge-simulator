@@ -25,21 +25,23 @@ export const Simulate: React.FC = () => {
 	const contest = leagues[leagueId].contests[contestId];
 
 	const items = Object.fromEntries(
-		Object.keys(contest.banks).map((k) => {
-			const bank = contest.banks[k];
-			const av = getAverage(bank, values);
+		Object.keys(contest.banks)
+			.map((k) => {
+				const bank = contest.banks[k];
+				const av = getAverage(bank, values);
 
-			return [
-				k,
-				{
-					name: bank.title,
-					note: av,
-					threshold: bank.threshold,
-					admitted: av > bank.threshold,
-					delta: av - bank.threshold,
-				},
-			];
-		})
+				return [
+					k,
+					{
+						name: bank.title,
+						note: av,
+						threshold: bank.threshold,
+						admitted: av > bank.threshold,
+						delta: av - bank.threshold,
+					},
+				] as const;
+			})
+			.sort((a, b) => b[1].delta - a[1].delta)
 	);
 
 	const subjects = contest.subjects;

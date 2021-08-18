@@ -61,6 +61,12 @@ export const Graph: React.FC<GraphProps> = ({
 		}
 	}, [datas]);
 
+	useEffect(() => {
+		if(chart.current && chart.current.data.labels) {
+			chart.current.data.labels = labels;
+		}
+	}, [labels]);
+
 	const witdh = 28 + datas[0].length * 74;
 
 	return <div>
