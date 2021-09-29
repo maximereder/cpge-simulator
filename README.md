@@ -9,10 +9,6 @@ Simule tes admissibilités aux concours de ta classe préparatoire scientifique,
 - [Tailwind](https://tailwindcss.com/) 
 - [Vite.js](https://vitejs.dev/)
 
-## Versions
-
-**Dernière version stable :** 1.0.0
-
 ## Auteurs
 
 * **Maxime REDER** _alias_ [@maxou54200](https://github.com/maxou54200) pour la partie Data
